@@ -32,7 +32,7 @@
 
 
 
-    <link rel="shortcut icon" href="/avatar.png">
+    <link rel="shortcut icon" href="/heben.jpg">
 
 
 
@@ -97,7 +97,7 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
+            <img src="/img/heben.jpg" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/">John Doe</a></h1>
@@ -171,11 +171,11 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="mailto:862754020@qq.com" title="Email"></a>
+                                <a class="fa Email" href="/hpp_hxx@163.com" title="Email"></a>
                             
                                 <a class="fa 新浪微博" href="/sina weibo" title="新浪微博"></a>
                             
-                                <a class="fa GitHub" href="https://github.com/" title="GitHub"></a>
+                                <a class="fa GitHub" href="https://github.com/hpp1221" title="GitHub"></a>
                             
                                 <a class="fa 知乎" href="https://www.zhihu.com" title="知乎"></a>
                             
@@ -232,7 +232,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
+                <img src="/img/heben.jpg" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
@@ -257,11 +257,11 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:862754020@qq.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="/hpp_hxx@163.com" title="Email"></a>
                             
                                 <a class="fa 新浪微博" target="_blank" href="/sina weibo" title="新浪微博"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="https://github.com/" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/hpp1221" title="GitHub"></a>
                             
                                 <a class="fa 知乎" target="_blank" href="https://www.zhihu.com" title="知乎"></a>
                             
@@ -279,11 +279,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-你好，世界" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-eleemnt-ui中Checkbox多选框点击全选无法全部选中" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/15/你好，世界/" class="article-date">
-      <time datetime="2017-10-15T11:20:30.000Z" itemprop="datePublished">2017-10-15</time>
+      <a href="/2017/09/13/eleemnt-ui中Checkbox多选框点击全选无法全部选中/" class="article-date">
+      <time datetime="2017-09-13T11:20:30.000Z" itemprop="datePublished">2017-09-13</time>
 </a>
 
 
@@ -298,7 +298,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/你好，世界/">你好，世界</a>
+      <a class="article-title" href="/2017/09/13/eleemnt-ui中Checkbox多选框点击全选无法全部选中/">你好，世界</a>
     </h1>
   
 
@@ -308,17 +308,12 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h3 id="你好世界-3个代表h3"><a href="#你好世界-3个代表h3" class="headerlink" title="你好世界 3个代表h3"></a>你好世界 3个代表h3</h3><h2 id="两个代表h2"><a href="#两个代表h2" class="headerlink" title="两个代表h2"></a>两个代表h2</h2><ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ul>
-<ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ul>
-          
+        <h3 id="element-ui中Checkbox多选框的全选功能无法实现的问题"><a href="#element-ui中Checkbox多选框的全选功能无法实现的问题" class="headerlink" title="element-ui中Checkbox多选框的全选功能无法实现的问题"></a>element-ui中Checkbox多选框的全选功能无法实现的问题</h3><hr>
+<p>最近做的项目是使用vue.js2.0 + ElementUI开发后台管理系统，在使用Checkbox多选框时发现点击全选并不能全部选中，element-ui给出的实例在线运行时也是一样的效果，试过很多种方法，给出的结果是：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">handleCheckAllChange(event) &#123;</div><div class="line">        this.checkedCities = event.target.checked ? cityOptions : [];</div><div class="line">        this.isIndeterminate = false;</div><div class="line">      &#125;,</div></pre></td></tr></table></figure></p>
+<p>改为<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">handleCheckAllChange(event) &#123;</div><div class="line">        this.checkedCities = event ? cityOptions : [];</div><div class="line">        this.isIndeterminate = false;</div><div class="line">      &#125;,</div></pre></td></tr></table></figure></p>
+<p>在此打印的event本身就是一个Boolean类型。</p>
+<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1508260999816&amp;di=a3316ac5f55329316c3fb4c646efd079&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.glzy8.com%2Fupfiles%2Fceo%2F201702%2FJcHsBO4NTrs9tlGF22nP.gif" alt="cmd-markdown-logo"></p>
+<h3 id="element-ui-2-0"><a href="#element-ui-2-0" class="headerlink" title="element-ui 2.0"></a><a href="http://element.eleme.io/2.0/#/zh-CN/component/checkbox" target="_blank" rel="external">element-ui 2.0</a></h3>
       
     </div>
     
@@ -331,74 +326,6 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人博客/">个人博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2017/10/15/你好，世界/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/10/15/hello-world/" class="article-date">
-      <time datetime="2017-10-15T10:48:44.860Z" itemprop="datePublished">2017-10-15</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
       
       <div class="clearfix"></div>
     </div>
